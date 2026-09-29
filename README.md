@@ -35,11 +35,11 @@ Traditional product distribution often suffers from inefficient manual routing, 
 * **Description:** Displays the main administration web dashboard with system statistics (products, distributors, transactions) alongside the Flutter mobile application login and navigation menu screens.
 
 ### 2. Live Fleet Tracking & GIS Integration
-![GIS Tracking](Tawize.jpg)
+![GIS Tracking](Tawize.png)
 * **Description:** Illustrates the live interactive map on the web panel tracking distribution fleets across urban regions, paired with the mobile app interface for field management.
 
 ### 3. Analytics & Business Intelligence Reporting
-![Analytics Reports](MapingPhoto.jpg)
+![Analytics Reports](MapingPhoto.png)
 * **Description:** Showcases advanced data analytics, regional performance charts, and geographic distribution mapping used for supply chain optimization and sales reporting.
 
 ---
