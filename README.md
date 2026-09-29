@@ -1,13 +1,11 @@
 # 🚚 Smart Logistics Services System (Tawzie Tech)
 
-A comprehensive smart logistics and distribution management system developed to optimize supply chain operations, track distribution fleets in real-time using digital maps, and provide data-driven business intelligence reports.
+**Tawzie Tech** started as a **Graduation Project in 2022** and successfully transitioned from an academic concept into a real-world solution **applied and utilized in the job market**. 
 
 ---
 
 ## 📌 About the Project
-**Tawzie Tech** started as a **Graduation Project in 2022** and successfully transitioned from an academic concept into a real-world solution **applied and utilized in the job market**. 
-
-Traditional product distribution often suffers from inefficient manual routing, lack of real-time monitoring, high operational costs, and poor inventory control. Tawzie Tech bridges this gap by offering an integrated solution consisting of:
+Traditional product distribution often suffers from inefficient manual routing, lack of real-time monitoring, high operational costs, and poor inventory control. **Tawzie Tech** bridges this gap by offering an integrated solution consisting of:
 1. **Web Dashboard (Admin Panel):** For administrators to manage products, monitor active distributors in real-time, view heat/cluster maps of sales, and analyze performance reports.
 2. **Mobile Application (Distributor App):** Built with Flutter, enabling field agents to place product orders, add new points of sale, track routes, and record transactions within a precise geographical radius.
 
@@ -32,8 +30,17 @@ Traditional product distribution often suffers from inefficient manual routing, 
 
 ## 📱 Application Screenshots & Architecture
 
-### 🗺️ GIS Mapping & Real-Time Tracking
-![Mapping & Tracking](MapingPhoto.png)
+### 1. Web Dashboard & Mobile Interfaces
+![Dashboard Overview](Dashbord.png)
+* **Description:** Displays the main administration web dashboard with system statistics (products, distributors, transactions) alongside the Flutter mobile application login and navigation menu screens.
+
+### 2. Live Fleet Tracking & GIS Integration
+![GIS Tracking](Tawize.jpg)
+* **Description:** Illustrates the live interactive map on the web panel tracking distribution fleets across urban regions, paired with the mobile app interface for field management.
+
+### 3. Analytics & Business Intelligence Reporting
+![Analytics Reports](MapingPhoto.jpg)
+* **Description:** Showcases advanced data analytics, regional performance charts, and geographic distribution mapping used for supply chain optimization and sales reporting.
 
 ---
 
