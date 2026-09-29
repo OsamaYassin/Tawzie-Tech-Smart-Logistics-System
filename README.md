@@ -1,604 +1,508 @@
-# 🚚 Tawzie Tech — Smart Logistics & Distribution Platform
+# 🚚 Tawzie Tech — Smart Logistics & Distribution Management System
 
-<p align="center">
-  <strong>From field operations to data-driven decision making.</strong>
-</p>
+> **From field operations to geographic intelligence and data-driven decision making.**
 
-<p align="center">
-  A smart logistics and distribution management platform combining
-  <strong>Web</strong>, <strong>Mobile</strong>, <strong>GIS</strong>,
-  and <strong>Data Visualization</strong>.
-</p>
+Tawzie Tech is a **Smart Logistics & Distribution Management System** designed to improve product distribution, field operations, inventory management, geographic monitoring, and sales analysis.
 
-<p align="center">
-
-![Laravel](https://img.shields.io/badge/Laravel-8-FF2D20?style=for-the-badge\&logo=laravel\&logoColor=white)
-![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge\&logo=flutter\&logoColor=white)
-![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge\&logo=dart\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge\&logo=mysql\&logoColor=white)
-![GIS](https://img.shields.io/badge/GIS-Geospatial%20Analysis-2E7D32?style=for-the-badge)
-
-</p>
+The project started as a **Graduation Project in 2022** and was subsequently transitioned from an academic concept into a **real-world solution applied and utilized in the job market**.
 
 ---
 
-# 📸 Project Preview
+## 📌 Table of Contents
 
-<p align="center">
-  <img src="Tawize.png" alt="Tawzie Tech Project" width="850">
-</p>
+* [About the Project](#-about-the-project)
+* [Business Problem](#-business-problem)
+* [Solution](#-solution)
+* [Key Features](#-key-features)
+* [Application Screenshots](#-application-screenshots)
+* [System Architecture](#-system-architecture)
+* [Technology Stack](#️-technology-stack)
+* [Geographic Information System](#-geographic-information-system)
+* [Data & Business Intelligence](#-data--business-intelligence)
+* [Project Structure](#-project-structure)
+* [Documentation](#-documentation)
+* [Future Development](#-future-development)
+* [Project Background](#-project-background)
+* [Author](#-author)
 
 ---
 
-# 📌 Overview
+# 📌 About the Project
 
-**Tawzie Tech** is an integrated logistics and distribution management system designed to improve the management, monitoring, and analysis of field distribution operations.
+Traditional product distribution can involve several operational challenges:
 
-The platform connects:
+* Inefficient manual routing
+* Limited real-time monitoring
+* High operational costs
+* Difficult field supervision
+* Poor inventory visibility
+* Limited geographic analysis
+* Difficulty identifying high-demand areas
 
-**Distributors → Points of Sale → Products → Orders → Sales → Locations**
+**Tawzie Tech** addresses these challenges through an integrated system combining:
 
-into a centralized digital system.
-
-The project was initially developed as a **Graduation Project in 2022** and was subsequently developed toward a practical solution for real-world logistics and distribution operations.
-
-The system combines:
-
-* 🌐 Web-based management
+* 🌐 Web-based administration
 * 📱 Mobile field application
+* 🗺️ GIS and interactive mapping
+* 📍 Geographic validation
 * 📦 Product and inventory management
-* 🚚 Distribution operations
-* 📍 GPS and location-based validation
-* 🗺️ GIS and interactive maps
-* 📊 Data visualization
-* 📈 Operational and sales reporting
+* 📊 Data visualization and reporting
+* 🚚 Field distribution monitoring
+
+The system connects **field operations**, **geographic information**, and **business data** within one platform.
 
 ---
 
 # 🎯 Business Problem
 
-Traditional distribution operations can face several challenges:
+In traditional distribution environments, managers may have limited visibility into what is happening in the field.
 
-* Manual field operations
-* Limited visibility of distributor activities
-* Difficulty monitoring geographical coverage
-* Lack of centralized operational data
-* Inventory management challenges
-* Limited visibility into sales performance
-* Difficulty identifying high-demand geographical areas
+For example:
 
-### Tawzie Tech addresses these challenges by connecting operational data with digital tools.
+* Where are distributors currently operating?
+* Which areas generate the highest demand?
+* Which products are selling the most?
+* Where are the distribution points located?
+* Are transactions taking place at the correct geographic location?
+* How can inventory requests be managed more efficiently?
 
-```text
-                  FIELD OPERATIONS
-                         │
-                         ▼
-                ┌─────────────────┐
-                │  Mobile App     │
-                │    Flutter      │
-                └────────┬────────┘
-                         │
-                         │ API
-                         ▼
-                ┌─────────────────┐
-                │ Laravel Backend │
-                └────────┬────────┘
-                         │
-                         ▼
-                ┌─────────────────┐
-                │      MySQL      │
-                └────────┬────────┘
-                         │
-              ┌──────────┴──────────┐
-              ▼                     ▼
-       ┌─────────────┐       ┌─────────────┐
-       │ Web         │       │ GIS / Maps  │
-       │ Dashboard   │       │ & Location  │
-       └──────┬──────┘       └──────┬──────┘
-              │                     │
-              └──────────┬──────────┘
-                         ▼
-                Business Information
-```
+Tawzie Tech was designed to provide a digital infrastructure capable of collecting and organizing this operational information.
 
 ---
 
-# 💡 Key Features
+# 💡 Solution
 
-## 📱 1. Mobile Field Application
+The system is composed of two main components.
 
-The Flutter mobile application is designed for distributors and field agents.
+## 1. 🌐 Web Dashboard — Administration
 
-### Main capabilities
+The web dashboard allows administrators to:
 
-* User authentication
-* Product ordering
-* Point-of-sale management
-* Adding new distribution points
-* Sales transactions
-* GPS location capture
+* Manage products
+* Manage distribution points
+* Monitor active distributors
+* Monitor distribution activities
+* View geographic information
+* Analyze sales activity
+* View charts and reports
+* Analyze regional performance
+* Visualize demand through maps
+
+---
+
+## 2. 📱 Mobile Application — Field Operations
+
+The mobile application is built with **Flutter** and is designed for distributors and field agents.
+
+Field users can:
+
+* Place product orders
+* Request specific product quantities
+* Add new points of sale
+* Track routes
+* Record transactions
+* Work with geographic location information
+* Perform transactions within a defined geographic radius
+
+---
+
+# ✨ Key Features
+
+## 🚚 Real-Time Tracking & Monitoring
+
+The system provides live tracking and monitoring of distribution vehicles and field agents through interactive digital maps.
+
+This gives administrators better visibility of field operations.
+
+---
+
+## 📍 Geo-Fencing Sales Enforcement
+
+The mobile application uses geographic validation to control sales transactions.
+
+Transactions are restricted to a **200-meter radius** from the designated distribution point.
+
+This provides an additional layer of geographic control for field transactions.
+
+---
+
+## 📦 Smart Ordering System
+
+Distributors can request specific quantities of products based on available inventory.
+
+This connects field requirements with inventory availability.
+
+---
+
+## 🗺️ Geographic Mapping & GIS
+
+The system integrates geographic technologies to visualize:
+
+* Distribution points
 * Field operations
-* Geographical validation
-* Distributor activity management
+* Geographic regions
+* Sales activity
+* Demand areas
+* Distribution activity
+
+Interactive maps provide a geographic view of operational data.
 
 ---
 
-# 🖥️ 2. Web Management Dashboard
+## 📊 Data Visualization & Reporting
 
-The web dashboard provides administrators with centralized control over the logistics system.
-
-### Main functions
-
-* Product management
-* Distributor management
-* Point-of-sale management
-* Order management
-* Transaction monitoring
-* Inventory visibility
-* Performance monitoring
-* Geographical visualization
-* Sales analysis
-
----
-
-# 🗺️ 3. GIS & Location Intelligence
-
-Geographical data is an important component of Tawzie Tech.
-
-The platform integrates mapping technologies to visualize distribution activities and geographical information.
-
-### GIS capabilities
-
-* Interactive maps
-* Distribution point visualization
-* Distributor location tracking
-* Sales geographical analysis
-* Heat maps
-* Cluster maps
-* Geographical coverage analysis
-
-### Technologies
-
-* Leaflet.js
-* Mapbox
-* Google Maps API
-* ArcGIS
-
----
-
-# 📍 4. Geo-fencing
-
-The system includes a **200-meter geographical validation radius** for selected sales operations.
-
-This allows the platform to verify whether a distributor is operating within the expected geographical area.
-
-```text
-                    200 m Radius
-
-                ┌───────────────┐
-             ╱                     ╲
-           ╱                         ╲
-          │          📍               │
-          │       Point of Sale      │
-          │                           │
-           ╲                         ╱
-             ╲_____________________╱
-
-                       📱
-                   Distributor
-```
-
-This feature connects:
-
-**Mobile Technology + GPS + Business Rules + Logistics Operations**
-
----
-
-# 📦 5. Smart Ordering & Inventory
-
-Distributors can request product quantities based on available inventory.
-
-The system provides a connection between:
-
-```text
-Products
-   ↓
-Inventory
-   ↓
-Distributor Requests
-   ↓
-Orders
-   ↓
-Sales
-```
-
-This creates a centralized flow for managing product distribution.
-
----
-
-# 📊 6. Data Visualization & Reporting
-
-The platform provides visual tools for analyzing operational and sales information.
-
-Examples include:
+The system provides different forms of data visualization, including:
 
 * Interactive charts
-* Sales statistics
 * Heat maps
 * Cluster maps
 * Regional performance visualization
-* Product performance analysis
-* Distribution monitoring
+* Sales reporting
+
+These visualizations help transform operational data into information that can support business analysis.
 
 ---
 
-# 📸 Screenshots
+## 🏪 Point of Sale Management
 
-## 🖥️ Web Dashboard
+Distribution points can be:
 
-The administration dashboard provides an overview of products, distributors, transactions, and operational information.
+* Added
+* Updated
+* Removed
 
-<p align="center">
-  <img src="Dashbord.png" alt="Tawzie Tech Web Dashboard" width="950">
-</p>
+This functionality allows field operations to maintain geographic information about points of sale.
+
+---
+
+# 🖼️ Application Screenshots
+
+## Project Preview
+
+<img src="./Tawize.png" alt="Tawzie Tech Project Preview" width="900">
+
+---
+
+## 🌐 Web Dashboard
+
+<img src="./Dashbord.png" alt="Tawzie Tech Web Dashboard" width="900">
+
+The dashboard provides administrative information, system statistics, geographic visualization, and operational monitoring.
 
 ---
 
 ## 🗺️ GIS & Mapping
 
-The GIS interface provides geographical visualization of distribution activities and locations.
+<img src="./MapingPhoto.png" alt="Tawzie Tech GIS Mapping" width="900">
 
-<p align="center">
-  <img src="MapingPhoto.png" alt="Tawzie Tech GIS Mapping" width="950">
-</p>
-
----
-
-## 📱 Application Interface
-
-The repository also contains the Flutter mobile application used for field operations.
-
-<p align="center">
-  <img src="Tawize.png" alt="Tawzie Tech Application" width="750">
-</p>
+The mapping interface demonstrates the use of geographic information for distribution monitoring and operational analysis.
 
 ---
 
 # 🏗️ System Architecture
 
+The project follows a multi-component architecture combining a web backend, mobile application, relational database, and geographic services.
+
 ```text
-                         ┌──────────────────────┐
-                         │    Flutter Mobile    │
-                         │     Application      │
-                         └──────────┬───────────┘
-                                    │
-                                    │ REST API
-                                    ▼
-                         ┌──────────────────────┐
-                         │    Laravel 8 API     │
-                         │    Business Logic    │
-                         └──────────┬───────────┘
-                                    │
-                                    ▼
-                         ┌──────────────────────┐
-                         │        MySQL         │
-                         │   Relational Data    │
-                         └──────────┬───────────┘
-                                    │
-                    ┌───────────────┴────────────────┐
-                    │                                │
-                    ▼                                ▼
-          ┌───────────────────┐            ┌───────────────────┐
-          │   Web Dashboard   │            │    GIS / Maps     │
-          │ Monitoring &      │            │ GPS & Location    │
-          │ Reporting         │            │ Intelligence      │
-          └───────────────────┘            └───────────────────┘
+                    ┌─────────────────────────┐
+                    │      Field Agents       │
+                    │     Flutter Mobile      │
+                    └────────────┬────────────┘
+                                 │
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │     Laravel Backend      │
+                    │       PHP / MVC          │
+                    └────────────┬────────────┘
+                                 │
+                  ┌──────────────┴──────────────┐
+                  │                             │
+                  ▼                             ▼
+       ┌─────────────────────┐       ┌─────────────────────┐
+       │       MySQL         │       │    GIS / Mapping    │
+       │   Relational Data   │       │ Maps & Geolocation  │
+       └─────────────────────┘       └─────────────────────┘
+                  │                             │
+                  └──────────────┬──────────────┘
+                                 │
+                                 ▼
+                    ┌─────────────────────────┐
+                    │    Web Administration   │
+                    │       Dashboard         │
+                    └─────────────────────────┘
 ```
 
 ---
 
 # 🛠️ Technology Stack
 
-## Backend
+## Front-End & Mobile
 
-* PHP
-* Laravel 8
-* MVC Architecture
-* REST API
+* **Flutter**
+* **Dart**
+* **Bootstrap 4**
+* **HTML5**
+* **CSS3**
+* **JavaScript**
+
+## Back-End
+
+* **Laravel 8**
+* **PHP**
+* **MVC Architecture**
 
 ## Database
 
-* MySQL
+* **MySQL**
 * Relational database
-* Normalized database structure
+* Normalized database schema
 
-## Mobile
+## Mapping & GIS
 
-* Flutter
-* Dart
-
-## Web
-
-* HTML5
-* CSS3
-* JavaScript
-* Bootstrap 4
-
-## GIS & Mapping
-
-* Leaflet.js
-* Mapbox.js
-* Google Maps API
-* ArcGIS
+* **Leaflet.js**
+* **Mapbox.js**
+* **Google Maps API**
+* **ArcGIS**
 
 ---
 
-# 📊 Data Model
+# 🗺️ Geographic Information System
 
-The system manages several interconnected business entities.
+GIS is an important part of Tawzie Tech.
 
-```text
-              ┌──────────────┐
-              │ Distributors │
-              └───────┬──────┘
-                      │
-                      ▼
-              ┌──────────────┐
-              │ Points of    │
-              │    Sale      │
-              └───────┬──────┘
-                      │
-                      ▼
-              ┌──────────────┐
-              │ Transactions │
-              └───────┬──────┘
-                      │
-              ┌───────┴────────┐
-              ▼                ▼
-        ┌──────────┐      ┌──────────┐
-        │ Products │      │  Orders  │
-        └──────────┘      └──────────┘
-```
+The system combines operational information with geographic data to provide a spatial view of distribution activities.
 
-This operational data creates a foundation for further analysis and business intelligence.
+The geographic component can be used for:
+
+* Distribution point visualization
+* Distributor tracking
+* Geographic transaction validation
+* Regional sales analysis
+* Heat-map visualization
+* Cluster-map visualization
+* Geographic monitoring of field operations
+
+The **200-meter geo-fencing rule** is also used to validate mobile transactions against designated distribution points.
 
 ---
 
-# 📈 Data Analytics & Business Intelligence
+# 📊 Data & Business Intelligence
 
-One of the long-term opportunities of Tawzie Tech is to transform operational logistics data into business insights.
+Tawzie Tech is not only a logistics application.
 
-The system can support analysis across several dimensions.
+The system also generates operational data related to:
 
-## Sales Analytics
+* Products
+* Distributors
+* Transactions
+* Distribution points
+* Inventory
+* Geographic locations
+* Sales activity
+* Regional performance
 
-Potential KPIs include:
+This data can be used to support **Business Intelligence and operational decision-making**.
 
-* Total sales
-* Sales growth
-* Sales by product
-* Sales by region
-* Sales by distributor
-* Sales by point of sale
+### Current visualization capabilities
 
-## Product Analytics
+The existing system includes:
 
-* Best-selling products
-* Low-performing products
-* Product demand
-* Inventory movement
-* Replenishment requirements
+* Interactive charts
+* Heat maps
+* Cluster maps
+* Regional performance analysis
+* Sales reporting
 
-## Distributor Analytics
-
-* Distributor activity
-* Number of transactions
-* Geographical coverage
-* Sales performance
-
-## Geographic Analytics
-
-* Sales by geographical area
-* Customer density
-* Distribution coverage
-* High-demand areas
-* Potential expansion areas
+The combination of operational data and geographic information creates a foundation for further analytics and BI development.
 
 ---
 
-# 🔄 Data Analytics Pipeline
+# 📂 Project Structure
 
-The existing operational system can be extended into a complete analytics pipeline:
-
-```text
-                 OPERATIONAL DATA
-                        │
-                        ▼
-                     MySQL
-                        │
-                        ▼
-                Data Extraction
-                        │
-                        ▼
-                       SQL
-                        │
-                        ▼
-              Python / Pandas
-                        │
-                        ▼
-             Data Cleaning & EDA
-                        │
-                        ▼
-                    Power BI
-                        │
-                        ▼
-             Business Dashboards
-                        │
-                        ▼
-             Data-Driven Decisions
-```
-
-> **Note:** Python and Power BI are proposed extensions of the project and are not presented as technologies currently implemented in the existing application.
-
----
-
-# 🎓 Academic & Professional Context
-
-Tawzie Tech was initially developed as a **graduation project in 2022**.
-
-The project combines several areas of information technology:
-
-* Software Engineering
-* Web Development
-* Mobile Development
-* Database Management
-* Logistics
-* Geographic Information Systems
-* Data Visualization
-* Business Information Systems
-
-The project demonstrates how a software application can be designed around a real business process and later serve as a foundation for data analytics and business intelligence.
-
----
-
-# 📂 Repository Structure
+The repository currently contains the following main components:
 
 ```text
 Tawzie-Tech-Smart-Logistics-System/
 │
 ├── mobile-app-flutter/
-│   └── Flutter mobile application
+│   └── Flutter Mobile Application
 │
 ├── web-backend-laravel/
-│   └── Laravel backend
+│   └── Laravel Backend, Controllers, Models and Web Views
 │
 ├── Dashbord.png
-│   └── Web dashboard screenshot
+│   └── Web Dashboard Screenshot
 │
 ├── MapingPhoto.png
-│   └── GIS / mapping screenshot
+│   └── GIS / Mapping Screenshot
 │
 ├── Tawize.png
-│   └── Project / application image
+│   └── Project Preview Image
 │
 ├── Smart-logistics-services-system.pdf
-│   └── Graduation project report
+│   └── Graduation Project Report
 │
 ├── Presintation.pptx
-│   └── Project presentation
+│   └── Project Presentation
 │
 └── README.md
+    └── Project Documentation
 ```
 
 ---
 
 # 📚 Documentation
 
-Additional documentation is included in the repository:
+The repository contains the original project documentation.
 
 ### 📄 Graduation Project Report
 
-The PDF contains the project's academic documentation, analysis, design, and implementation details.
+[**Smart Logistics Services System — PDF**](./Smart-logistics-services-system.pdf)
 
 ### 📊 Project Presentation
 
-The PowerPoint presentation summarizes the project, its objectives, architecture, and main functionalities.
+[**Tawzie Tech — Presentation**](./Presintation.pptx)
+
+---
+
+# 🔄 Operational Workflow
+
+A simplified workflow of the system can be represented as:
+
+```text
+Field Operations
+       │
+       ▼
+Mobile Application
+       │
+       ▼
+Product / Sales Transactions
+       │
+       ▼
+Laravel Backend
+       │
+       ├──────────────► MySQL Database
+       │
+       └──────────────► Geographic Data
+                              │
+                              ▼
+                       GIS Visualization
+                              │
+                              ▼
+                       Web Dashboard
+                              │
+                              ▼
+                    Reports & Data Analysis
+```
 
 ---
 
 # 🚀 Future Development
 
-The project can be further developed into a modern data-driven logistics platform.
+The current project provides the foundation for further development.
 
-## Software Engineering
+Possible future improvements include:
 
-* [ ] Modernize the Laravel backend
-* [ ] Improve API documentation
-* [ ] Add automated testing
-* [ ] Improve authentication and authorization
-* [ ] Add Docker support
-* [ ] Add CI/CD
+### 📊 Advanced Business Intelligence
 
-## Data Engineering
+* Advanced KPI dashboards
+* Sales performance indicators
+* Inventory analytics
+* Distributor performance analysis
+* Regional demand analysis
+* Historical trend analysis
 
-* [ ] Design an analytical database
-* [ ] Build ETL pipelines
-* [ ] Create a data warehouse
-* [ ] Automate data extraction
-* [ ] Implement data quality checks
+### 🐍 Data Analytics
 
-## Data Analytics
+A future analytics layer could use technologies such as:
 
-* [ ] Python / Pandas analysis
-* [ ] Exploratory Data Analysis
-* [ ] Statistical analysis
-* [ ] KPI development
-* [ ] Product and customer segmentation
+* Python
+* Pandas
+* Data processing pipelines
+* Statistical analysis
 
-## Business Intelligence
+### 📈 BI Platforms
 
-* [ ] Build Power BI dashboards
-* [ ] Create interactive KPI monitoring
-* [ ] Add geographical sales analysis
-* [ ] Analyze distributor performance
-* [ ] Build inventory dashboards
+The operational data could also be connected to modern BI tools for more advanced dashboards and decision-support systems.
 
-## Advanced Analytics
+Examples include:
 
-* [ ] Demand forecasting
-* [ ] Route optimization
-* [ ] Sales prediction
-* [ ] Anomaly detection
-* [ ] Location intelligence
+* Power BI
+* Advanced reporting
+* Interactive KPI dashboards
+* Automated business reports
+
+> **Note:** Python, Pandas, and Power BI are considered future extensions of the project and are not presented here as technologies currently implemented in the repository.
 
 ---
 
-# 🎯 Project Vision
+# 🎓 Project Background
 
-The long-term vision is to evolve Tawzie Tech from a logistics management application into a **data-driven decision-support platform**.
+Tawzie Tech originally started as a **Graduation Project in 2022**.
+
+The project was designed around a real-world logistics and distribution problem and subsequently evolved beyond an academic concept into a solution **applied and utilized in the job market**.
+
+The project combines several areas:
 
 ```text
-        OPERATIONAL DATA
-               │
-               ▼
-          INFORMATION
-               │
-               ▼
-            INSIGHTS
-               │
-               ▼
-           DECISIONS
-               │
-               ▼
-       BUSINESS PERFORMANCE
+Software Engineering
+        +
+Mobile Development
+        +
+Web Development
+        +
+Database Management
+        +
+GIS / Geolocation
+        +
+Logistics
+        +
+Data Visualization
+        +
+Business Intelligence
 ```
 
-### **Turning logistics data into actionable business insights.**
+This combination makes the project a practical example of how software can be used to support logistics operations and business decision-making.
+
+---
+
+# 🌍 Project Vision
+
+The long-term vision of Tawzie Tech is to connect:
+
+**Field Operations → Geographic Data → Operational Data → Business Intelligence**
+
+The goal is to move from simply recording transactions to creating a system capable of transforming operational information into meaningful insights for logistics and distribution management.
 
 ---
 
 # 👨‍💻 Author
 
-## Osama Yassin
+**Osama Yassin**
 
-**Software Engineering · Data Analytics · Business Intelligence · Logistics Technology**
+Software Engineering / Technology Project
 
-[GitHub](https://github.com/OsamaYassin)
-
----
-
-# ⭐ Project Summary
-
-Tawzie Tech demonstrates the integration of:
-
-**Software Engineering + Mobile Development + GIS + Logistics + Data**
-
-with a clear path toward:
-
-**Data Analytics + Business Intelligence + Decision Support**
+GitHub: [@OsamaYassin](https://github.com/OsamaYassin)
 
 ---
 
-<p align="center">
-  <strong>🚚 Tawzie Tech — Connecting Logistics, Technology & Data</strong>
-</p>
+# 📌 Project Summary
+
+| Area             | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| 🎯 Domain        | Logistics & Distribution                          |
+| 📱 Mobile        | Flutter / Dart                                    |
+| 🌐 Backend       | Laravel 8 / PHP                                   |
+| 🗄️ Database     | MySQL                                             |
+| 🗺️ GIS          | Leaflet.js / Mapbox.js / Google Maps API / ArcGIS |
+| 📊 Visualization | Charts / Heat Maps / Cluster Maps                 |
+| 📍 Geofencing    | 200-meter transaction radius                      |
+| 🎓 Origin        | Graduation Project — 2022                         |
+| 🌍 Application   | Real-world logistics environment                  |
+
+---
+
+## ⭐ Tawzie Tech
+
+> **A Smart Logistics & Distribution Management System connecting field operations, geographic intelligence, and operational data.**
