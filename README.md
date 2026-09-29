@@ -48,3 +48,10 @@ Traditional product distribution often suffers from inefficient manual routing, 
 * `web-backend-laravel/` - Laravel Backend Controllers, Models, and Web Views
 * `mobile-app-flutter/` - Flutter Mobile Application Source Code
 * `docs/` - Graduation Project Research PDF and Presentation Files
+
+  ---
+
+## 📚 Project Documentation & Presentation
+You can download or review the official graduation project files below:
+* **📄 Graduation Project Report (PDF):** [Download / View PDF](Smart-logistics-services-system.pdf)
+* **📊 Presentation (PPTX):** [Download Presentation](Presintation.pptx)
